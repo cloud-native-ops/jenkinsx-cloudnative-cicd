@@ -1,6 +1,6 @@
 # Using Jenkins-X for Cloud Native CI/CD
 
-#### Install Client Tools
+### Install Client Tools
 `1.` AWS CLI - if using AWS otherwise see GCP documentation for installation.  
 
 ```
@@ -34,7 +34,7 @@ sudo mv /tmp/eksctl /usr/local/bin
 
 <br>
 
-#### Clone jenkins-x/jenkins-x-boot-config
+### Clone jenkins-x/jenkins-x-boot-config
 
 > Note: https://aws.amazon.com/blogs/apn/modernize-your-ci-cd-pipeline-using-jenkins-x-with-amazon-eks/
 
