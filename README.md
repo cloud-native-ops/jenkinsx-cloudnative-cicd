@@ -1,2 +1,1 @@
-# jenkinsx-cloudnative-cicd
-Using Jenkins-x for Cloud Native CI/CD
+# Using Jenkins-X for Cloud Native CI/CD
