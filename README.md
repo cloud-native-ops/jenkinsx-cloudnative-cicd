@@ -13,14 +13,16 @@ sudo ./aws/install
 `2.` Helm 
 ```
 curl https://baltocdn.com/helm/signing.asc | sudo apt-key add -
-echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+echo "deb https://baltocdn.com/helm/stable/debian/ all main" | \
+  sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
 sudo apt-get install helm -y
 ```
 
 `3.` jx  
 
 ```
-curl -L https://github.com/jenkins-x/jx/releases/download/v3.2.186/jx-linux-amd64.tar.gz | tar xzv
+curl -L https://github.com/jenkins-x/jx/releases/download/v3.2.186/jx-linux-amd64.tar.gz | \
+  tar xzv
 chmod +x jx 
 sudo mv jx /usr/local/bin
 ```
@@ -28,7 +30,9 @@ sudo mv jx /usr/local/bin
 `4.` eksctl  
 
 ```
-curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+curl --silent --location \
+  "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | \
+  tar xz -C /tmp
 sudo mv /tmp/eksctl /usr/local/bin
 ```
 
