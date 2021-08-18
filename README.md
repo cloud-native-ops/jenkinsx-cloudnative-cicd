@@ -36,6 +36,18 @@ curl --silent --location \
 sudo mv /tmp/eksctl /usr/local/bin
 ```
 
+`5.` terraform
+
+> https://learn.hashicorp.com/tutorials/terraform/install-cli
+
+```
+sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt-get update && sudo apt-get install terraform
+```
+
+
 <br>
 
 ### Clone jenkins-x/jenkins-x-boot-config
