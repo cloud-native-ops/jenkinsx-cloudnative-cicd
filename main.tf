@@ -12,7 +12,7 @@ module "eks-jx" {
 terraform {
   backend "s3" {
     bucket         = "jx-tf-state-files"
-    prefix         = "terraform/state"
+    # prefix         = "terraform/state"
     key            = "jx/terraform.tfstate"
     region         = "us-east-2"
   }
