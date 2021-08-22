@@ -18,6 +18,13 @@ echo "deb https://baltocdn.com/helm/stable/debian/ all main" | \
 sudo apt-get install helm -y
 ```
 
+NEED TO REWRITE THIS
+```
+wget https://get.helm.sh/helm-v3.6.3-linux-amd64.tar.gz 
+tar -zxvf 
+sudo mv linux-amd64/helm /usr/sbin/helm
+```
+
 `3.` jx  
 
 ```
@@ -49,7 +56,18 @@ sudo apt-get update && sudo apt-get install terraform
 
 #### Need to re-write this.
 
-<br>
+```
+wget <terraform version> 
+
+# e.g. https://releases.hashicorp.com/terraform/0.14.11/terraform_0.14.11_linux_amd64.zip>
+
+unzip <terraform zipped binary> 
+
+sudo mv terraform /usr/bin/terraform
+
+```
+
+Export aws region: `export AWS_REGION="us-east-2"`
 
 ### Clone jenkins-x/jenkins-x-boot-config
 
